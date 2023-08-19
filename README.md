@@ -1,27 +1,69 @@
-# React + TypeScript + Vite
+# typescript-react-cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> This is a shopping cart that utilizes React and TypeScript.
 
-Currently, two official plugins are available:
+## Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- JavaScript
+- React
+- TypeScript
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get a local copy up and running follow these simple example steps.
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
+- A text editor(preferably Visual Studio Code)
+- Node
+- Web browser
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Install
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
+
+### Using it Locally
+
+- Clone the project
+
+```bash 
+git clone git@github.com:Buyaki01/typescript-react-cart.git
+
+cd typescript-react-cart
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install dependencies
+
+```bash
+npm i 
+or
+npm install
+```
+
+- To Start the development json database
+```bash
+json-server --watch data/db.json --port 3500
+```
+
+- To Start the development server
+```bash
+npm run dev
+```
+
+## Author
+👤 **Ritta Sweta**
+
+- Linkedin: [@ritta-sweta](https://www.linkedin.com/in/ritta-sweta/)
+- Github: [@Buyaki01](https://github.com/Buyaki01)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Buyaki01/typescript-react-cart/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Inspiration: [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode)
