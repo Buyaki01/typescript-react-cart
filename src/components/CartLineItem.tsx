@@ -1,4 +1,4 @@
-import { ReactElement } from "react"
+import { ReactElement, ChangeEvent } from "react"
 import { CartItemType } from "../context/CartProvider"
 import { ReducerAction } from "../context/CartProvider"
 import { ReducerActionType } from "../context/CartProvider"
@@ -59,15 +59,18 @@ const CartLineItem = ({ item, dispatch, REDUCER_ACTIONS }: PropsType) => {
         { new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(lineTotal)}
       </div>
 
-      <button>
-        
+      <button 
+        className="cart__button"
+        aria-label="Remove Item From Cart"
+        title="Remove Item From Cart"
+        onClick={onRemoveFromCart}
+      >
+       ❌
       </button>
     </li>
   )
 
-  return (
-    <div></div>
-  )
+  return content
 }
 
 export default CartLineItem
